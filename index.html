@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Vigilant Labs — AI-Powered Computer Vision Solutions for Smart City Surveillance">
+  <title>Vigilant Labs | Smart City Dashboard</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+  <!-- ─── LANDING VIEW ─── -->
+  <div id="landing-view" class="view active">
+    <!-- Navbar -->
+    <nav class="navbar">
+      <div class="nav-brand">
+        <div class="brand-icon">
+          <img src="/logo.webp" alt="Vigilant Labs Logo" style="width:40px;height:40px;object-fit:contain;border-radius:6px;">
+        </div>
+        <span class="brand-text">Vigilant Labs</span>
+      </div>
+      <div class="nav-meta">
+        <span class="pulse-dot"></span>
+        <span class="nav-status">System Online</span>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+      <div class="hero-bg-grid"></div>
+      <div class="hero-content">
+        <div class="hero-badge">AI-Powered Surveillance</div>
+        <h1 class="hero-title">
+          <span class="gradient-text">Vigilant Labs</span>
+        </h1>
+        <p class="hero-subtitle">
+          Next-generation <strong>Computer Vision</strong> solutions for smart city surveillance.
+          Real-time detection of traffic violations, crowd anomalies, and safety compliance —
+          powered by deep learning at the edge.
+        </p>
+        <div class="hero-stats">
+          <div class="stat-item">
+            <span class="stat-value">99.2%</span>
+            <span class="stat-label">Detection Accuracy</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-value">&lt;50ms</span>
+            <span class="stat-label">Inference Time</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-value">24/7</span>
+            <span class="stat-label">Monitoring</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-value">4</span>
+            <span class="stat-label">Use Cases</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Areas Section -->
+    <section class="areas-section">
+      <h2 class="section-title">Monitored Zones</h2>
+      <p class="section-desc">Select a zone to view real-time analytics and violation detections</p>
+      <div class="areas-grid">
+
+        <!-- Area 1 Card -->
+        <div class="area-card" data-area="1" id="area-card-1">
+          <div class="area-card-glow"></div>
+          <div class="area-card-content">
+            <div class="area-icon">
+              <svg viewBox="0 0 48 48" fill="none">
+                <rect x="4" y="20" width="40" height="24" rx="3" stroke="currentColor" stroke-width="2" />
+                <path d="M24 8 L24 20 M18 20 L30 20" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+                <circle cx="24" cy="8" r="4" stroke="currentColor" stroke-width="2" />
+                <circle cx="14" cy="32" r="3" fill="currentColor" opacity="0.5" />
+                <circle cx="24" cy="32" r="3" fill="#f59e0b" opacity="0.8" />
+                <circle cx="34" cy="32" r="3" fill="#ef4444" opacity="0.8" />
+              </svg>
+            </div>
+            <div class="area-label">ZONE 01</div>
+            <h3 class="area-name">Traffic Junction</h3>
+            <p class="area-desc">Helmet violation detection & triple riding monitoring at urban intersections</p>
+            <div class="area-tags">
+              <span class="tag tag-helmet">Helmet</span>
+              <span class="tag tag-triple">Triple Riding</span>
+            </div>
+            <div class="area-footer">
+              <span class="area-cam-count">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <circle cx="12" cy="12" r="3" />
+                  <path d="M2 12s4-8 10-8 10 8 10 8-4 8-10 8-10-8-10-8z" />
+                </svg>
+                2 Cameras
+              </span>
+              <span class="area-enter-btn">Enter →</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Area 2 Card -->
+        <div class="area-card" data-area="2" id="area-card-2">
+          <div class="area-card-glow"></div>
+          <div class="area-card-content">
+            <div class="area-icon">
+              <svg viewBox="0 0 48 48" fill="none">
+                <path d="M4 40 L14 24 L24 32 L34 16 L44 28" stroke="currentColor" stroke-width="2"
+                  stroke-linecap="round" stroke-linejoin="round" />
+                <path d="M4 40 L44 40" stroke="currentColor" stroke-width="2" />
+                <circle cx="8" cy="12" r="3" stroke="currentColor" stroke-width="2" />
+                <circle cx="18" cy="8" r="2" stroke="currentColor" stroke-width="2" />
+                <circle cx="38" cy="10" r="2.5" stroke="currentColor" stroke-width="2" />
+              </svg>
+            </div>
+            <div class="area-label">ZONE 02</div>
+            <h3 class="area-name">Highway</h3>
+            <p class="area-desc">Wrong-way driving alerts & crowd density monitoring on major highways</p>
+            <div class="area-tags">
+              <span class="tag tag-wrongway">Wrong-Way</span>
+              <span class="tag tag-crowd">Crowd</span>
+            </div>
+            <div class="area-footer">
+              <span class="area-cam-count">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <circle cx="12" cy="12" r="3" />
+                  <path d="M2 12s4-8 10-8 10 8 10 8-4 8-10 8-10-8-10-8z" />
+                </svg>
+                2 Cameras
+              </span>
+              <span class="area-enter-btn">Enter →</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <p>© 2026 Vigilant Labs — Intelligent Vision. Safer Cities.</p>
+    </footer>
+  </div>
+
+  <!-- ─── AREA DETAIL VIEW ─── -->
+  <div id="area-view" class="view">
+    <!-- Top Bar -->
+    <nav class="navbar area-navbar">
+      <div class="nav-brand">
+        <button id="back-btn" class="back-btn" aria-label="Back to overview">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+            stroke-linecap="round">
+            <path d="M19 12H5M12 19l-7-7 7-7" />
+          </svg>
+        </button>
+        <div class="brand-icon brand-icon-sm">
+          <img src="/logo.webp" alt="Vigilant Labs Logo" style="width:36px;height:36px;object-fit:contain;border-radius:6px;">
+        </div>
+        <span class="brand-text">Vigilant Labs</span>
+        <span class="breadcrumb-sep">/</span>
+        <span id="area-breadcrumb" class="breadcrumb-area">Zone 01</span>
+      </div>
+      <div class="nav-meta">
+        <span class="pulse-dot"></span>
+        <span class="nav-status">Live Feed</span>
+      </div>
+    </nav>
+
+    <!-- Area Header -->
+    <div class="area-header">
+      <div class="area-header-info">
+        <h1 id="area-title" class="area-h1">Traffic Junction</h1>
+        <p id="area-description" class="area-h1-desc">Real-time violation detection and analytics</p>
+      </div>
+    </div>
+
+    <!-- Filters Bar -->
+    <div class="filters-bar">
+      <div class="filter-group">
+        <label class="filter-label" for="filter-date-from">From</label>
+        <input type="datetime-local" id="filter-date-from" class="filter-input">
+      </div>
+      <div class="filter-group">
+        <label class="filter-label" for="filter-date-to">To</label>
+        <input type="datetime-local" id="filter-date-to" class="filter-input">
+      </div>
+      <div class="filter-group">
+        <label class="filter-label" for="filter-type">Violation Type</label>
+        <select id="filter-type" class="filter-input">
+          <option value="all">All Types</option>
+        </select>
+      </div>
+      <button id="filter-apply-btn" class="filter-apply-btn">Apply Filters</button>
+      <button id="filter-reset-btn" class="filter-reset-btn">Reset</button>
+    </div>
+
+    <!-- Video Section -->
+    <div class="video-section">
+      <div class="video-panel">
+        <div class="video-panel-header">
+          <span class="video-label">
+            <span class="rec-dot"></span>
+            Raw Feed
+          </span>
+        </div>
+        <video id="raw-video" class="video-player" controls muted></video>
+      </div>
+      <div class="video-panel">
+        <div class="video-panel-header">
+          <span class="video-label">
+            <span class="rec-dot rec-dot-heat"></span>
+            Heatmap Analysis
+          </span>
+        </div>
+        <video id="heatmap-video" class="video-player" controls muted></video>
+      </div>
+    </div>
+
+    <!-- Detections Table -->
+    <div class="detections-section">
+      <div class="detections-header">
+        <h2 class="detections-title">Detection Events</h2>
+        <span id="detections-count" class="detections-count">0 events</span>
+      </div>
+      <div class="table-wrapper">
+        <table class="detections-table">
+          <thead>
+            <tr>
+              <th>#</th>
+              <th>Timestamp</th>
+              <th>Violation Type</th>
+              <th>Snapshot</th>
+            </tr>
+          </thead>
+          <tbody id="detections-tbody">
+          </tbody>
+        </table>
+      </div>
+      <div id="no-results" class="no-results" style="display:none;">
+        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1"
+          opacity="0.4">
+          <circle cx="11" cy="11" r="8" />
+          <path d="M21 21l-4.35-4.35" />
+        </svg>
+        <p>No detection events found for the selected filters.</p>
+      </div>
+    </div>
+
+    <!-- Image Lightbox -->
+    <div id="lightbox" class="lightbox" style="display:none;">
+      <div class="lightbox-overlay"></div>
+      <div class="lightbox-content">
+        <button id="lightbox-close" class="lightbox-close">&times;</button>
+        <img id="lightbox-img" src="" alt="Detection snapshot">
+      </div>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+
+</html>
