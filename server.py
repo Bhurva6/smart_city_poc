@@ -1,6 +1,5 @@
 import http.server
 import os
-import sys
 import urllib.parse
 
 PORT = 3000
@@ -105,6 +104,63 @@ class DashboardHandler(http.server.BaseHTTPRequestHandler):
                 if not chunk:
                     break
                 self.wfile.write(chunk)
+
+    def do_HEAD(self):
+        """Respond to HEAD requests with headers only (no body)."""
+        url_path = urllib.parse.unquote(self.path.split('?')[0])
+        if url_path == '/':
+            url_path = '/index.html'
+
+        if url_path.startswith('/assets/'):
+            rel = url_path[len('/assets/'):]
+            file_path = os.path.join(ASSETS_DIR, rel.replace('/', os.sep))
+        else:
+            file_path = os.path.join(DASHBOARD_DIR, url_path.lstrip('/').replace('/', os.sep))
+
+        file_path = os.path.realpath(file_path)
+
+        if not (file_path.startswith(os.path.realpath(DASHBOARD_DIR)) or
+                file_path.startswith(os.path.realpath(ASSETS_DIR))):
+            self.send_error(403, 'Forbidden')
+            return
+
+        if not os.path.isfile(file_path):
+            self.send_error(404, 'Not Found')
+            return
+
+        ext = os.path.splitext(file_path)[1].lower()
+        mime = MIME_TYPES.get(ext, 'application/octet-stream')
+        file_size = os.path.getsize(file_path)
+
+        range_header = self.headers.get('Range')
+        if range_header and mime.startswith('video/'):
+            try:
+                parts = range_header.replace('bytes=', '').split('-')
+                start = int(parts[0]) if parts[0] else file_size - int(parts[1])
+                end = int(parts[1]) if len(parts) > 1 and parts[1] else file_size - 1
+                if start < 0 or start >= file_size or end >= file_size or start > end:
+                    raise ValueError('Out of range')
+                chunk_size = end - start + 1
+            except (ValueError, IndexError):
+                self.send_error(416, 'Range Not Satisfiable')
+                return
+
+            self.send_response(206)
+            self.send_header('Content-Range', f'bytes {start}-{end}/{file_size}')
+            self.send_header('Accept-Ranges', 'bytes')
+            self.send_header('Content-Length', str(chunk_size))
+            self.send_header('Content-Type', mime)
+            self.end_headers()
+            return
+
+        # Normal HEAD response
+        self.send_response(200)
+        self.send_header('Content-Type', mime)
+        self.send_header('Content-Length', str(file_size))
+        self.send_header('Accept-Ranges', 'bytes')
+        self.send_header('Cache-Control', 'no-cache')
+        self.send_header('Access-Control-Allow-Origin', '*')
+        self.end_headers()
 
     def log_message(self, format, *args):
         status = args[1] if len(args) > 1 else ''

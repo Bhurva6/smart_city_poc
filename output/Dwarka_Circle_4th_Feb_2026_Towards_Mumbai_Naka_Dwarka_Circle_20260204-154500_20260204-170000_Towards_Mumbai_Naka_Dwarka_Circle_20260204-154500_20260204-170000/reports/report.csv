@@ -1,0 +1,2 @@
+video,width,height,fps,frames,duration_sec,proc_time_sec,proc_fps,persons,two_wheel,four_wheel,cars,buses,trucks,entry_in,exit_out,helmet_vio_total,triple_total,wrongside_total,debris_total,base_model,helmet_model,device,ts
+Dwarka_Circle_4th_Feb_2026_Towards_Mumbai_Naka_Dwarka_Circle_20260204-154500_20260204-170000_Towards_Mumbai_Naka_Dwarka_Circle_20260204-154500_20260204-170000.mp4,1920,1080,12.17,181,14.9,71.8,2.5,104,24,47,29,1,17,9,2,0,0,1,0,yolov8l.pt,best.pt,mps,2026-02-24T01:09:30.406519

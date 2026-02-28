@@ -1,0 +1,2 @@
+video,width,height,fps,frames,duration_sec,proc_time_sec,proc_fps,persons,two_wheel,four_wheel,cars,buses,trucks,entry_in,exit_out,helmet_vio_total,triple_total,wrongside_total,debris_total,base_model,helmet_model,device,ts
+CBS_4th_Feb_RLVD_Towards_Trimbak_Naka_(Copy)_20260204-161800_20260204-183000.mp4,1920,1080,10.15,146,14.4,48.3,3.0,48,38,46,32,4,10,5,1,1,0,0,0,yolov8l.pt,best.pt,mps,2026-02-24T01:00:53.829397

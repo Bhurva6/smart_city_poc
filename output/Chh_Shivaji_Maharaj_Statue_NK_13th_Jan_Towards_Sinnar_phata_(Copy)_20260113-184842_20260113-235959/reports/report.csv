@@ -1,0 +1,2 @@
+video,width,height,fps,frames,duration_sec,proc_time_sec,proc_fps,persons,two_wheel,four_wheel,cars,buses,trucks,entry_in,exit_out,helmet_vio_total,triple_total,wrongside_total,debris_total,base_model,helmet_model,device,ts
+Chh_Shivaji_Maharaj_Statue_NK_13th_Jan_Towards_Sinnar_phata_(Copy)_20260113-184842_20260113-235959.mp4,1920,1080,10.05,144,14.3,46.4,3.1,53,23,24,14,3,7,0,0,0,0,0,0,yolov8l.pt,best.pt,mps,2026-02-24T01:04:00.952118

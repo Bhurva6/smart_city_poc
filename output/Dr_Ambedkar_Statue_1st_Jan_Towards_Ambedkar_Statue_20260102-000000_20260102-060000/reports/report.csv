@@ -1,0 +1,2 @@
+video,width,height,fps,frames,duration_sec,proc_time_sec,proc_fps,persons,two_wheel,four_wheel,cars,buses,trucks,entry_in,exit_out,helmet_vio_total,triple_total,wrongside_total,debris_total,base_model,helmet_model,device,ts
+Dr_Ambedkar_Statue_1st_Jan_Towards_Ambedkar_Statue_20260102-000000_20260102-060000.mp4,1920,1080,12.14,179,14.7,49.1,3.6,13,2,21,20,0,1,0,0,0,0,0,0,yolov8l.pt,best.pt,mps,2026-02-24T01:08:18.531070

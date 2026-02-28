@@ -1,0 +1,2 @@
+video,width,height,fps,frames,duration_sec,proc_time_sec,proc_fps,persons,two_wheel,four_wheel,cars,buses,trucks,entry_in,exit_out,helmet_vio_total,triple_total,wrongside_total,debris_total,base_model,helmet_model,device,ts
+CBS_4th_Feb_output.mp4,1920,1080,15.0,225,15.0,68.9,3.3,66,15,9,3,3,3,5,6,0,0,0,0,yolov8l.pt,best.pt,mps,2026-02-24T01:02:02.812205

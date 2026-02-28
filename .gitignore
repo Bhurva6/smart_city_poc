@@ -1,0 +1,17 @@
+# Raw input videos (large, served from CDN on Vercel)
+inputs/
+
+# Original un-optimised output videos — serve from CDN, not git
+output/**/*.mp4
+
+
+# Re-encoded faststart videos — serve from CDN, not git
+output_videos/
+
+# Python / OS
+__pycache__/
+*.pyc
+.DS_Store
+
+# Node
+node_modules/

@@ -1,0 +1,2 @@
+video,width,height,fps,frames,duration_sec,proc_time_sec,proc_fps,persons,two_wheel,four_wheel,cars,buses,trucks,entry_in,exit_out,helmet_vio_total,triple_total,wrongside_total,debris_total,base_model,helmet_model,device,ts
+CBS_27th_Jan_Towards_Meher_Signal_(Copy)_20260127-160000_20260127-190000.mp4,1920,1080,12.15,180,14.8,76.7,2.3,61,26,73,46,11,16,2,0,3,0,0,0,yolov8l.pt,best.pt,mps,2026-02-24T00:58:56.466420

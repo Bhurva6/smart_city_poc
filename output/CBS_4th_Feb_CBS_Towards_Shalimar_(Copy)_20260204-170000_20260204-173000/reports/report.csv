@@ -1,0 +1,2 @@
+video,width,height,fps,frames,duration_sec,proc_time_sec,proc_fps,persons,two_wheel,four_wheel,cars,buses,trucks,entry_in,exit_out,helmet_vio_total,triple_total,wrongside_total,debris_total,base_model,helmet_model,device,ts
+CBS_4th_Feb_CBS_Towards_Shalimar_(Copy)_20260204-170000_20260204-173000.mp4,1920,1080,15.1,218,14.4,68.7,3.2,56,20,5,1,2,2,13,12,0,0,0,0,yolov8l.pt,best.pt,mps,2026-02-24T01:00:05.440963

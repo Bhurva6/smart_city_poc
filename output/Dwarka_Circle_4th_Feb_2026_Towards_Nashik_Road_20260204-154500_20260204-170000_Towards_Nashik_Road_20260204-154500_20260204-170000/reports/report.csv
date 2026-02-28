@@ -1,0 +1,2 @@
+video,width,height,fps,frames,duration_sec,proc_time_sec,proc_fps,persons,two_wheel,four_wheel,cars,buses,trucks,entry_in,exit_out,helmet_vio_total,triple_total,wrongside_total,debris_total,base_model,helmet_model,device,ts
+Dwarka_Circle_4th_Feb_2026_Towards_Nashik_Road_20260204-154500_20260204-170000_Towards_Nashik_Road_20260204-154500_20260204-170000.mp4,1920,1080,12.14,178,14.7,70.8,2.5,64,39,58,47,0,11,3,0,6,0,1,0,yolov8l.pt,best.pt,mps,2026-02-24T01:10:41.397867

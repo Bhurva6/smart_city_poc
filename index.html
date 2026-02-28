@@ -65,80 +65,14 @@
       </div>
     </section>
 
-    <!-- Areas Section -->
+    <!-- Camera Feeds Section -->
     <section class="areas-section">
-      <h2 class="section-title">Monitored Zones</h2>
-      <p class="section-desc">Select a zone to view real-time analytics and violation detections</p>
-      <div class="areas-grid">
-
-        <!-- Area 1 Card -->
-        <div class="area-card" data-area="1" id="area-card-1">
-          <div class="area-card-glow"></div>
-          <div class="area-card-content">
-            <div class="area-icon">
-              <svg viewBox="0 0 48 48" fill="none">
-                <rect x="4" y="20" width="40" height="24" rx="3" stroke="currentColor" stroke-width="2" />
-                <path d="M24 8 L24 20 M18 20 L30 20" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
-                <circle cx="24" cy="8" r="4" stroke="currentColor" stroke-width="2" />
-                <circle cx="14" cy="32" r="3" fill="currentColor" opacity="0.5" />
-                <circle cx="24" cy="32" r="3" fill="#f59e0b" opacity="0.8" />
-                <circle cx="34" cy="32" r="3" fill="#ef4444" opacity="0.8" />
-              </svg>
-            </div>
-            <div class="area-label">ZONE 01</div>
-            <h3 class="area-name">Traffic Junction</h3>
-            <p class="area-desc">Helmet violation detection & triple riding monitoring at urban intersections</p>
-            <div class="area-tags">
-              <span class="tag tag-helmet">Helmet</span>
-              <span class="tag tag-triple">Triple Riding</span>
-            </div>
-            <div class="area-footer">
-              <span class="area-cam-count">
-                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                  <circle cx="12" cy="12" r="3" />
-                  <path d="M2 12s4-8 10-8 10 8 10 8-4 8-10 8-10-8-10-8z" />
-                </svg>
-                2 Cameras
-              </span>
-              <span class="area-enter-btn">Enter →</span>
-            </div>
-          </div>
-        </div>
-
-        <!-- Area 2 Card -->
-        <div class="area-card" data-area="2" id="area-card-2">
-          <div class="area-card-glow"></div>
-          <div class="area-card-content">
-            <div class="area-icon">
-              <svg viewBox="0 0 48 48" fill="none">
-                <path d="M4 40 L14 24 L24 32 L34 16 L44 28" stroke="currentColor" stroke-width="2"
-                  stroke-linecap="round" stroke-linejoin="round" />
-                <path d="M4 40 L44 40" stroke="currentColor" stroke-width="2" />
-                <circle cx="8" cy="12" r="3" stroke="currentColor" stroke-width="2" />
-                <circle cx="18" cy="8" r="2" stroke="currentColor" stroke-width="2" />
-                <circle cx="38" cy="10" r="2.5" stroke="currentColor" stroke-width="2" />
-              </svg>
-            </div>
-            <div class="area-label">ZONE 02</div>
-            <h3 class="area-name">Highway</h3>
-            <p class="area-desc">Wrong-way driving alerts & crowd density monitoring on major highways</p>
-            <div class="area-tags">
-              <span class="tag tag-wrongway">Wrong-Way</span>
-              <span class="tag tag-crowd">Crowd</span>
-            </div>
-            <div class="area-footer">
-              <span class="area-cam-count">
-                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                  <circle cx="12" cy="12" r="3" />
-                  <path d="M2 12s4-8 10-8 10 8 10 8-4 8-10 8-10-8-10-8z" />
-                </svg>
-                2 Cameras
-              </span>
-              <span class="area-enter-btn">Enter →</span>
-            </div>
-          </div>
-        </div>
-
+      <h2 class="section-title">Live Camera Feeds</h2>
+      <p class="section-desc">Select a location to view AI-powered violation detection and analytics</p>
+      <div class="zone-ui-section">
+        <div id="zone-toggle-container"></div>
+        <div id="area-info-container"></div>
+        <div id="video-grid"></div>
       </div>
     </section>
 

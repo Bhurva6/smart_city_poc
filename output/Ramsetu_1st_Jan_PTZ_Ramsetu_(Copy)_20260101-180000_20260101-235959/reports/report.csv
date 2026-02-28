@@ -1,0 +1,2 @@
+video,width,height,fps,frames,duration_sec,proc_time_sec,proc_fps,persons,two_wheel,four_wheel,cars,buses,trucks,entry_in,exit_out,helmet_vio_total,triple_total,wrongside_total,debris_total,base_model,helmet_model,device,ts
+Ramsetu_1st_Jan_PTZ_Ramsetu_(Copy)_20260101-180000_20260101-235959.mp4,1920,1080,14.81,212,14.3,67.9,3.1,71,19,40,36,0,4,1,2,0,0,0,0,yolov8l.pt,best.pt,mps,2026-02-24T01:16:17.807493

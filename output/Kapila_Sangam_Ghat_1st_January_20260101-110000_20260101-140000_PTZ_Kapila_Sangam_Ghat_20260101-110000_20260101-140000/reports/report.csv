@@ -1,0 +1,2 @@
+video,width,height,fps,frames,duration_sec,proc_time_sec,proc_fps,persons,two_wheel,four_wheel,cars,buses,trucks,entry_in,exit_out,helmet_vio_total,triple_total,wrongside_total,debris_total,base_model,helmet_model,device,ts
+Kapila_Sangam_Ghat_1st_January_20260101-110000_20260101-140000_PTZ_Kapila_Sangam_Ghat_20260101-110000_20260101-140000.mp4,1920,1080,19.05,284,14.9,79.3,3.6,28,2,29,13,7,9,1,1,0,0,0,0,yolov8l.pt,best.pt,mps,2026-02-24T01:13:10.264536

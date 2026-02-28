@@ -1,0 +1,40 @@
+{
+  "cleanUrls": false,
+  "trailingSlash": false,
+  "headers": [
+    {
+      "source": "/(.*)",
+      "headers": [
+        { "key": "Access-Control-Allow-Origin", "value": "*" },
+        { "key": "X-Content-Type-Options", "value": "nosniff" }
+      ]
+    },
+    {
+      "source": "/output/(.*)\\.mp4",
+      "headers": [
+        { "key": "Content-Type", "value": "video/mp4" },
+        { "key": "Accept-Ranges", "value": "bytes" },
+        { "key": "Cache-Control", "value": "public, max-age=86400" }
+      ]
+    },
+    {
+      "source": "/output_videos/(.*)\\.mp4",
+      "headers": [
+        { "key": "Content-Type", "value": "video/mp4" },
+        { "key": "Accept-Ranges", "value": "bytes" },
+        { "key": "Cache-Control", "value": "public, max-age=86400" }
+      ]
+    },
+    {
+      "source": "/inputs/(.*)\\.mp4",
+      "headers": [
+        { "key": "Content-Type", "value": "video/mp4" },
+        { "key": "Accept-Ranges", "value": "bytes" },
+        { "key": "Cache-Control", "value": "public, max-age=86400" }
+      ]
+    }
+  ],
+  "rewrites": [
+    { "source": "/", "destination": "/index.html" }
+  ]
+}
